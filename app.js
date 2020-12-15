@@ -4,7 +4,7 @@ const fs = require('fs');
 
 const generatePage = (name, github) => {
     return `
-    <! DOCTYPE html>
+    <!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
