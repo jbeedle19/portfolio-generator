@@ -175,15 +175,15 @@ Add a New Project
     });
 };
 
-const pageHTML = generatePage(mockData);
-//promptUser()
-//    .then(promptProject)
-//    .then(portfolioData => {
-//        const pageHTML = generatePage(portfolioData);
+//const pageHTML = generatePage(mockData);
+promptUser()
+    .then(promptProject)
+    .then(portfolioData => {
+        const pageHTML = generatePage(mockData);
 
-        //fs.writeFile('./index.html', pageHTML, err => {
-        //    if (err) throw err;
+        fs.writeFile('./index.html', pageHTML, err => {
+            if (err) throw err;
 
-        //    console.log('Portfolio complete! Check out index.html to see the output!');
-        //})
-//    });
+            console.log('Portfolio complete! Check out index.html to see the output!');
+        })
+    });
